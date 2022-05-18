@@ -10,6 +10,13 @@
 
 <body>
     <h1>Welcome to gitPub</h1>
+    <ul>
+        <% for (let i = 0; i < allDrinks.length; i++) { %>
+            <li><%= allDrinks[i].name %></li>
+        <% } %>
+        
+    </ul>
+    
 
     <style type="text/css">
         body {

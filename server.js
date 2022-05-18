@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const drinks = require('./models/drinks');
 const port = 3000;
+const textTransform = require('text-transform');
+
+
 
 
 
@@ -19,6 +22,10 @@ app.get('/drinks', (req, res) => {
     });
 });
 
+
+app.get('/drinks/:id', (req, res) => {
+    res.send(req.params.id)
+});
 
 
 
