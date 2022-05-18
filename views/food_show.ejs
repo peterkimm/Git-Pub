@@ -5,22 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks Index</title>
+    <title>See Food Details</title>
 </head>
 
 <body>
-    <h1>Here's the Drinks Index</h1>
-    <ul>
-        <% for (let i = 0; i < allDrinks.length; i++) { %>
-            <li>
-                <a href="/drinks/<%= i %>">
-                <%= allDrinks[i].name %>
-                </a>
-            </li>
-    </ul>
-        <% } %>
+    <h1>At foo bar</h1>
+    <h2><%=food.name%></h2>
+    <img src="<%=food.image%>.jpg" >
+    <h3><%=food.price%></h3>
+    <a href="/food">Back to Drinks Index</a>
     
-        <br> <a href="/foods">list of foods</a>
+
 
     
 
